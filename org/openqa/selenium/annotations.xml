@@ -1,0 +1,5 @@
+<root>
+    <item name='org.openqa.selenium.WebDriver org.openqa.selenium.WebDriver.Options manage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>
