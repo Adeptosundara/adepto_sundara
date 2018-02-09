@@ -5,18 +5,19 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.junit.After;
-import junit.framework.TestCase;
+import java.lang.*;
 
 
 import java.util.concurrent.TimeUnit;
+
 
 import static junit.framework.Assert.assertTrue;
 import static junit.framework.TestCase.assertEquals;
 
 
 public class login {
-    protected static WebDriver driver = new ChromeDriver();
+    System.setProperty("webdriver.chromedriver.driver", "C:\\Users\\s\\Downloads\\chrome");
+    private static WebDriver driver = new ChromeDriver();
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer VerificationErrors= new StringBuffer();
