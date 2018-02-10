@@ -5,20 +5,16 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import java.lang.*;
-
-
 import java.util.concurrent.TimeUnit;
-
-
 import static junit.framework.Assert.assertTrue;
 import static junit.framework.TestCase.assertEquals;
 
 
 public class login {
 
-    WebDriver driver = new ChromeDriver();
+    WebDriver driver = new FirefoxDriver();
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer VerificationErrors= new StringBuffer();
