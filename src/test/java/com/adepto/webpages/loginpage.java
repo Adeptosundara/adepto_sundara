@@ -8,11 +8,12 @@ import java.sql.Driver;
 public class loginpage {
     public void loinpage( WebDriver Driver)
     {
+        Driver.findElement ( loginobjects.LOGIN_1 ).clear ();
        Driver.findElement(loginobjects.USER_NAME).clear();
        Driver.findElement(loginobjects.USER_NAME).sendKeys("testchallenge@maildrop.cc");;
        Driver.findElement(loginobjects.PASS_WORD).clear();
        Driver.findElement(loginobjects.PASS_WORD).sendKeys("TestChallenge1");
-       Driver.findElement(loginobjects.LOGIN).click();
+       Driver.findElement(loginobjects.LOGIN_2).click();
     }
 
 }
