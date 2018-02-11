@@ -13,8 +13,10 @@ import static junit.framework.TestCase.assertEquals;
 
 
 public class login {
-
-    WebDriver driver = new FirefoxDriver();
+    String key= "webdriver.gecko.driver";
+    String value= "C:\\Users\\s\\Downloads\\geckodriver-v0.10.0-win64\\geckodriver.exe";
+     public static System.setProperty(String key,String value);
+    private WebDriver driver = new FirefoxDriver();
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer VerificationErrors= new StringBuffer();

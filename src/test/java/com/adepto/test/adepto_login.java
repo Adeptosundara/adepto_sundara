@@ -12,8 +12,12 @@ import static junit.framework.Assert.assertTrue;
 import static junit.framework.TestCase.assertEquals;
 
 public class adepto_login {
-    //System.setProperty("webdriver.gecko.driver","C:\\Users\\s\\Downloads\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-    WebDriver driver = new FirefoxDriver();
+    String key = "webdriver.gecko.driver";
+    String value = "C:\\Users\\s\\Downloads\\geckodriver-v0.10.0-win64\\geckodriver.exe";
+     public static System.SetProperty(
+    String key, String
+    value);
+    WebDriver driver = new FirefoxDriver ();
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer VerificationErrors = new StringBuffer ();
@@ -38,14 +42,15 @@ public class adepto_login {
         // Check for the Phone Number existance
         driver.findElement ( By.className ( "ng-binding ng-scope" ) ).click ();
         driver.findElement ( By.className ( "ng-binding ng-scope" ) ).sendKeys ( "specialising”" );
-       // Boolean assertTrue = driver.findElements ( By.className ( "ng-binding ng-scope" ).contains ( "“Luke Skywalker" ) );
+        Boolean assertTrue = driver.findElements ( By.className ( "ng-binding ng-scope" ).contains ( "“Luke Skywalker" ) );
 
-        //if (assertTrue == true) {
+        if (assertTrue == true) {
             System.out.print ( "Yes" );
-        //} else {
-          //  System.out.print ( "No" );
+        } else {
+            System.out.print ( "No" );
         }
-    }//
+    }
+}
 
 
 
